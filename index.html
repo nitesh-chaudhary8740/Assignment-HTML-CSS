@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Crypto Market</title>
+  <!-- google-fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cal+Sans&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- google-material-icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&
+   icon_names=currency_bitcoin,currency_exchange,groups,home,notifications,sync_alt" />
+  <!-- font-awsome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- root css -->
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="main">
+    <section class="nav-container">
+      <input type="checkbox" id="check-toggle">
+      <nav class="navbar">
+        <ul class="nav-items nav-left">
+          <li id="name-logo"><span>
+              <img class="logo" src="./mylogo.png" alt="">
+            </span> <span>
+              <h2>&nbsp; NIK CYRPTO</h2>
+            </span>
+          </li>
+          <li> <a href="#home"><span>Home</span>
+              <span class="material-symbols-outlined left-nav-icons">home<span></span></a>
+          </li>
+          <li><a href="#currencies"><span>Cryptocurrencies</span>
+              <i class="fa-solid fa-coins left-nav-icons fontawsome"></i></a>
+
+          </li>
+        
+          <li>
+            <a href="#convertor"><span>Converter</span>
+              <span class="material-symbols-outlined left-nav-icons">currency_exchange</span></a>
+          </li>
+
+          <li>
+            <a href="#community">
+              <span>Community</span>
+              <span class="material-symbols-outlined left-nav-icons">groups<span>
+            </a>
+
+          </li>
+
+
+        </ul>
+        <ul class="nav-items nav-right">
+
+          <li>
+            <div class="nav-right-items">
+              <div>
+                <input id="search-box" type="search" placeholder="Search">
+              </div>
+              <div>
+                <i class="fa-regular fa-bell right-nav-icons fontawsome"></i>
+                <i class="fa-brands fa-x-twitter fontawsome right-nav-icons"></i>
+                <i class="fa-brands fa-linkedin fontawsome right-nav-icons"></i>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <label for="check-toggle"><i class="fa-solid fa-bars right-nav-icons"></i></label>
+          </li>
+        </ul>
+      </nav>
+
+    </section>
+    <section id="home" class="home main-section">
+      <div class="home-container">
+        <div class="home-content">
+          <h1>Today's Crypto Price by NIK CRYPTO</h1>
+          <span>The global crypto market cap is $3T, a <span class="loss"><i class="fa-solid fa-caret-down"></i>0.45%</span>
+             decrease over the last day
+          </span>
+        </div>
+        <div class="home-boxes">
+          <!-- <h1>TRENDING COINS</h1> -->
+          <div class="trending home-box">
+            <span>Trending Coins &nbsp;<i class="fa-solid fa-angle-right"></i></span>
+            <table class="trending-coins-table">
+  
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>PUNDIX</td>
+                  <td>$0.5180</td>
+                  <td class="gain"><i class="fa-solid fa-caret-up"></i>11.04%</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>STO</td>
+                  <td>$0.1987</td>
+                  <td class="gain"><i class="fa-solid fa-caret-up"></i>67.55%</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>AERGO</td>
+                  <td>$0.005634</td>
+                  <td class="gain"><i class="fa-solid fa-caret-up"></i>27.06%</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>AIOT</td>
+                  <td>$0.45</td>
+                  <td class="gain"><i class="fa-solid fa-caret-up"></i>69.78%</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>PENGU</td>
+                  <td>$0.0000001357</td>
+                  <td class="gain"><i class="fa-solid fa-caret-up"></i>11.90%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- <h2>MOST VISITED COINS</h2> -->
+          <div class="most-visited home-box">
+            <span>Most Visited &nbsp;<i class="fa-solid fa-angle-right"></i></span>
+            <table class="most-visited-coins-table">
+  
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>AITECH</td>
+                  <td>$1.50</td>
+                  <td class="gain"><i class="fa-solid fa-caret-up"></i> 8.50%</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>AIC</td>
+                  <td>$0.80</td>
+                  <td class="loss"><i class="fa-solid fa-caret-down"></i> 1.20%</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>PUGG</td>
+                  <td>$0.05</td>
+                  <td class="gain"><i class="fa-solid fa-caret-up"></i> 12.00%</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>DCK</td>
+                  <td>$2.00</td>
+                  <td class="loss"><i class="fa-solid fa-caret-down"></i> 3.50%</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>BTC</td>
+                  <td>$40,000</td>
+                  <td class="gain"><i class="fa-solid fa-caret-up"></i> 2.00%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- <h2>RECENTLY ADDED COINS</h2> -->
+          <div class="recently-added home-box">
+            <span>Recently Added &nbsp;<i class="fa-solid fa-angle-right"></i></span>
+            <table class="recently-added-coins-table">
+  
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>GORK</td>
+                  <td>$0.05</td>
+                  <td class="gain"><i class="fa-solid fa-caret-up"></i> 5.00%</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>CLND</td>
+                  <td>$1.20</td>
+                  <td class="loss"><i class="fa-solid fa-caret-down"></i> 2.50%</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>TKRO</td>
+                  <td>$0.80</td>
+                  <td class="gain"><i class="fa-solid fa-caret-up"></i> 10.00%</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>AWR</td>
+                  <td>$2.50</td>
+                  <td class="loss"><i class="fa-solid fa-caret-down"></i> 1.20%</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>GORKXAI</td>
+                  <td>$0.03</td>
+                  <td class="gain"><i class="fa-solid fa-caret-up"></i> 8.00%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      
+
+     
+
+
+    </section>
+   
+    <section id="currencies" class="Currencies main-section">
+      <h2>Top #10 Currencies</h2>
+      <table class="currencies-table">
+        <thead>
+          <tr>
+            <th class="table-srno">#</th>
+            <th id="thead-name">Name</th>
+            <th>Price</th>
+            <th>1h%</th>
+            <th>24h%</th>
+            <th>7d%</th>
+            <th>Market Cap</th>
+            <th>Volume</th>
+            <th>Circulating Supply</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="table-srno">1</td>
+            <td class="crypto-name-img"> <img class="crypto-logo"
+                src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png" alt=""><span>Bitcoin (BTC)</span></td>
+            <td>$94,766.49</td>
+            <td><span class="gain"><i class="fa-solid fa-caret-up"></i> 0.05%</span></td>
+            <td><span class="gain"><i class="fa-solid fa-caret-up"></i> 0.23%</span></td>
+            <td><span class="loss"><i class="fa-solid fa-caret-down"></i> 1.21%</span></td>
+            <td>$1,881,068,046,514</td>
+            <td>$23,456,789,012</td>
+            <td>19,859,837 BTC</td>
+          </tr>
+          <tr>
+            <td class="table-srno">2</td>
+            <td class="crypto-name-img"><img class="crypto-logo"
+                src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png" alt=""><span>Ethereum (ETH)</span>
+            </td>
+            <td>$1,800.67</td>
+            <td><span class="gain"><i class="fa-solid fa-caret-up"></i> 0.03%</span></td>
+            <td><span class="loss"><i class="fa-solid fa-caret-down"></i> 0.15%</span></td>
+            <td><span class="loss"><i class="fa-solid fa-caret-down"></i> 2.34%</span></td>
+            <td>$217,248,182,825</td>
+            <td>$12,345,678,901</td>
+            <td>120,587,321 ETH</td>
+          </tr>
+          <tr>
+            <td class="table-srno">3</td>
+            <td class="crypto-name-img"><img class="crypto-logo"
+                src="https://s2.coinmarketcap.com/static/img/coins/64x64/825.png" alt=""><span>Tether (USDT)</span></td>
+            <td>$1.00</td>
+            <td><span class="loss"><i class="fa-solid fa-caret-down"></i> 0.01%</span></td>
+            <td><span class="gain"><i class="fa-solid fa-caret-up"></i> 0.01%</span></td>
+            <td><span class="neutral">0.00%</span></td>
+            <td>$148,019,445,760</td>
+            <td>$45,678,901,234</td>
+            <td>148,019,445,760 USDT</td>
+          </tr>
+          <tr>
+            <td class="table-srno">4</td>
+            <td class="crypto-name-img"><img class="crypto-logo"
+                src="https://s2.coinmarketcap.com/static/img/coins/64x64/52.png" alt=""><span>XRP (XRP)</span></td>
+            <td>$2.23</td>
+            <td><span class="gain"><i class="fa-solid fa-caret-up"></i> 0.45%</span></td>
+            <td><span class="gain"><i class="fa-solid fa-caret-up"></i> 1.23%</span></td>
+            <td><span class="gain"><i class="fa-solid fa-caret-up"></i> 3.45%</span></td>
+            <td>$130,882,232,896</td>
+            <td>$5,678,901,234</td>
+            <td>58,693,871,211 XRP</td>
+          </tr>
+          <tr>
+            <td class="table-srno">5</td>
+            <td class="crypto-name-img"><img class="crypto-logo"
+                src="https://s2.coinmarketcap.com/static/img/coins/64x64/5426.png" alt=""><span>Solana (SOL)</span></td>
+            <td>$146.41</td>
+            <td><span class="gain"><i class="fa-solid fa-caret-up"></i> 0.21%</span></td>
+            <td><span class="loss"><i class="fa-solid fa-caret-down"></i> 0.56%</span></td>
+            <td><span class="gain"><i class="fa-solid fa-caret-up"></i> 2.11%</span></td>
+            <td>$75,951,998,926</td>
+            <td>$3,456,789,012</td>
+            <td>518,693,871 SOL</td>
+          </tr>
+          <tr>
+            <td class="table-srno">6</td>
+            <td class="crypto-name-img"><img class="crypto-logo"
+                src="https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png" alt=""><span>USD Coin (USDC)</span>
+            </td>
+            <td>$0.99</td>
+            <td><span class="gain"><i class="fa-solid fa-caret-up"></i> 0.01%</span></td>
+            <td><span class="gain"><i class="fa-solid fa-caret-up"></i> 0.01%</span></td>
+            <td><span class="neutral">0.00%</span></td>
+            <td>$61,742,131,269</td>
+            <td>$2,345,678,901</td>
+            <td>62,365,813,131 USDC</td>
+          </tr>
+          <tr>
+            <td class="table-srno">7</td>
+            <td class="crypto-name-img"> <img class="crypto-logo"
+                src="https://s2.coinmarketcap.com/static/img/coins/64x64/1839.png" alt=""><span>Binance Coin
+                (BNB)</span></td>
+            <td>$601.26</td>
+            <td><span class="gain"><i class="fa-solid fa-caret-up"></i> 0.15%</span></td>
+            <td><span class="gain"><i class="fa-solid fa-caret-up"></i> 0.34%</span></td>
+            <td><span class="loss"><i class="fa-solid fa-caret-down"></i> 1.56%</span></td>
+            <td>$84,842,324,265</td>
+            <td>$1,234,567,890</td>
+            <td>141,137,871 BNB</td>
+          </tr>
+          <tr>
+            <td class="table-srno">8</td>
+            <td class="crypto-name-img"><img class="crypto-logo"
+                src="https://s2.coinmarketcap.com/static/img/coins/64x64/74.png" alt=""><span>Dogecoin (DOGE)</span>
+            </td>
+            <td>$0.15</td>
+            <td><span class="gain"><i class="fa-solid fa-caret-up"></i> 0.67%</span></td>
+            <td><span class="loss"><i class="fa-solid fa-caret-down"></i> 1.23%</span></td>
+            <td><span class="loss"><i class="fa-solid fa-caret-down"></i> 2.34%</span></td>
+            <td>N/A</td>
+            <td>$456,789,012</td>
+            <td>132,670,764,301 DOGE</td>
+          </tr>
+          <tr>
+            <td class="table-srno">9</td>
+            <td class="crypto-name-img"><img class="crypto-logo"
+                src="https://s2.coinmarketcap.com/static/img/coins/64x64/2010.png" alt=""><span>Cardano (ADA)</span>
+            </td>
+            <td>$0.69</td>
+            <td><span class="loss"><i class="fa-solid fa-caret-down"></i> 0.29%</span></td>
+            <td><span class="gain"><i class="fa-solid fa-caret-up"></i> 0.56%</span></td>
+            <td><span class="gain"><i class="fa-solid fa-caret-up"></i> 1.78%</span></td>
+            <td>$24,634,014,136</td>
+            <td>$234,567,890</td>
+            <td>35,693,871,211 ADA</td>
+          </tr>
+          <tr>
+            <td class="table-srno">10</td>
+            <td class="crypto-name-img"><img class="crypto-logo"
+                src="https://s2.coinmarketcap.com/static/img/coins/64x64/1958.png" alt=""><span>TRON (TRX)</span></td>
+            <td>$0.24</td>
+            <td><span class="loss"><i class="fa-solid fa-caret-down"></i> 0.42%</span></td>
+            <td><span class="gain"><i class="fa-solid fa-caret-up"></i> 0.89%</span></td>
+            <td><span class="loss"><i class="fa-solid fa-caret-down"></i> 1.23%</span></td>
+            <td>$23,154,921,511</td>
+            <td>$123,456,789</td>
+            <td>96,493,787,111 TRX</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+   
+    <section id="convertor" class="convertor-calculator main-section">
+      <h2>Cryptocurrency Converter Calculator <i class="fa-solid fa-calculator"></i></i></h2>
+      <div class="calculator">
+        <span><input type="number" placeholder="Enter the quantity"></span>
+        <span class="cyrpto-fiat-select">
+          <select id="crypto-select">
+          <option value="BTC">Bitcoin (BTC)</option>
+          <option value="ETH">Ethereum (ETH)</option>
+          <option value="USDT">Tether (USDT)</option>
+          <option value="USDC">USD Coin (USDC)</option>
+          <option value="BNB">Binance Coin (BNB)</option>
+          <option value="XRP">XRP (XRP)</option>
+          <option value="DOGE">Dogecoin (DOGE)</option>
+          <option value="ADA">Cardano (ADA)</option>
+          <option value="MATIC">Polygon (MATIC)</option>
+          <option value="SOL">Solana (SOL)</option>
+        </select>
+        <span class="material-symbols-outlined left-nav-icons">sync_alt</span>
+          <select id="fiat-select">
+            <option value="USD">United States Dollar (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="JPY">Japanese Yen (JPY)</option>
+            <option value="GBP">British Pound (GBP)</option>
+            <option value="AUD">Australian Dollar (AUD)</option>
+            <option value="CAD">Canadian Dollar (CAD)</option>
+            <option value="CHF">Swiss Franc (CHF)</option>
+            <option value="CNY">Chinese Yuan (CNY)</option>
+            <option value="INR">Indian Rupee (INR)</option>
+            <option value="RUB">Russian Ruble (RUB)</option>
+          </select>
+        </span>
+        <span>1 Bitcoin (BTC) = 95,901.34 United States Dollar "$" (USD)</span>
+        <span><button>Refresh</button></span>
+      </div>
+
+    </section>
+    <section id="community" class="Community main-section">
+      <h2>Community Feeds <i class="fa-solid fa-rss"></i></h2>
+      <div class="community-posts">
+       
+   
+        <div class="posts-list">
+          <div class="comm-post">
+            <div class="content">
+              <span class="poster">
+                <img src="https://s3.coinmarketcap.com/static-gravity/image/27d8fac4b9c44b6a9ed0c9a75b0a5a09.png" alt="" class="user-img">
+                <span class="username">
+                  Crypto Patel
+                  <span class="poster-handler">@CryptoPatel</span>
+                  · 7 hours</span>
+              </span>
+              <div class="comm-post-content-text">  
+                  <p>BREAKING: #BLACKROCK BOUGHT $674,900,000 WORTH OF #BITCOIN AND $20,100,000 WORTH OF #ETHEREUM YESTERDAY. Are you Still Thinking BTC$BTC Can Go to $10k Again?
+                </p>
+                
+              </div>
+              <!-- <div></div> -->
+              <img id="shared-img" src=" https://s3.coinmarketcap.com/static-gravity/image/75a0d13ff6fd408bac8d2813df8763d1.png" alt="">
+              <div class="post-likes-reactions">
+                <span >
+                  <i class="fa-solid fa-eye"></i> 5.6k
+                </span >
+                <span>
+                  <i class="fa-solid fa-thumbs-up" style="color: dodgerblue;"></i>1.2k
+
+                </span >
+                <span>
+                  <i class="fa-solid fa-heart" style="color: red;"></i> 743
+                </span>
+                
+                <span>
+                  <i class="fa-solid fa-message" style="color: green;"></i> 351
+                </span>
+               
+              </div>
+            </div>
+            <div><button class="follow-btn">  + Follow</button>
+            </div>
+          </div>
+          <div class="comm-post">
+            <div class="content">
+              <span class="poster">
+                <img src="https://s3.coinmarketcap.com/static-gravity/image/145348c2fef64830a435fa564df47a3a.png" alt="" class="user-img">
+                <span class="username">
+                  COG Chain
+                  <span class="poster-handler">@crypto_obsess_girl</span>
+                  · 16 hours</span>
+              </span>
+              <div class="comm-post-content-text">  
+                  <p>
+                    Let’s dive into this AI16Z$AI16Z chart from #BingX ! On the 4-hour timeframe, AI16Z peaked at $0.2650 before dropping to $0.2641, down 1.11%. A bearish correction is forming as it falls below the 50/200 EMAs (yellow/purple lines) – a potential sell signal! Support sits at $0.2611; a break could target $0.2199. Resistance is at $0.2650.
+                </p>
+                
+              </div>
+              <img id="shared-img" src=" https://s3.coinmarketcap.com/static-gravity/thumbnail/large/d142f596b9024ceeaa3b53eb2fab5cee.png" alt="">
+              <div class="post-likes-reactions">
+                <span >
+                  <i class="fa-solid fa-eye"></i> 1.6k
+                </span >
+                <span>
+                  <i class="fa-solid fa-thumbs-up" style="color: dodgerblue;"></i>232
+
+                </span >
+                <span>
+                  <i class="fa-solid fa-heart" style="color: red;"></i> 51
+                </span>
+                
+                <span>
+                  <i class="fa-solid fa-message" style="color: green;"></i> 34
+                </span>
+               
+              </div>
+            </div>
+            <div><button class="follow-btn">  + Follow</button>
+            </div>
+          </div>
+          <div class=" share-post">
+            <div class="mypost-profile-textarea">
+              <i class="fa-solid fa-circle-user"></i>
+              <textarea name="" id="post-textarea"
+                placeholder="How do you feel about the market today? Share your ideas here!"></textarea>
+            </div>
+            
+            <div class="post-items">
+              <div class="left">
+                <div class="post-bullish-berish-cont">
+                  <div class="gain post-bullish">Bullish <i class="fa-solid fa-arrow-up"></i></div>
+                  <div class="loss post-berish">Berish <i class="fa-solid fa-arrow-down"></i></div>
+                </div>
+                <i class="fa-solid fa-image"></i>
+                <i class="fa-regular fa-face-smile"></i>
+              
+              </div>
+              <div class="right">
+                <button  class="post-btn">Post</button>
+              </div>
+            </div><!--post-items-->
+          </div><!-- share-post -->
+        </div><!--post list-->
+      
+      </div><!--comnunity-post-->
+    </section>
+    <section class="about">
+      <div class="about-heading"><h1>ABOUT NIK CRYPTO</h1></div>
+      <div class="about-content">To understand how crypto projects and exchanges are listed on NikCrypto, please refer to our listing policy and Frequently Asked Questions section.
+
+        Click here to see our full list of writers and contributors.
+        If you would like to advertise with NikCrypto or are interested in our product offerings for companies, drop us an e-mail at <span class="neutral">advertise@nikcrypto.com</span>. For editorial partnerships on our blog, 
+        write to us at <span class="neutral">social@nikcrypto.com</span>.
+        
+        For job openings at NikCrypto, check out our careers page.
+        If you would like to advertise with NikCrypto, please visit this page
+      </div>
+      <div class="about-download">
+        <div class="name-logo">
+          <span>
+            <img src="./mylogo.png" alt="">
+          </span> <span>
+            <h2>NIK CYRPTO</h2>
+          </span>
+        </div>
+        <img src="pngegg.png" alt="">
+      </div>
+      <div class="copyrights">© 2025 NikCrypto. All rights reserved</div>
+
+    </section>
+
+
+  </div>
+</body>
+
+</html>
